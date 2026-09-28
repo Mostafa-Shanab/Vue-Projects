@@ -11,7 +11,9 @@
     {{ message }}
     <div id="app">
       <h1>Vue 3 App</h1>
-      <p>{{ message }}</p>
+      <a v-bind:href="link">Learn Vue</a>
+      <!-- <p v-html="message()"></p> -->
+      <p>{{message()}}</p>
     </div>
   </body>
 </html>
