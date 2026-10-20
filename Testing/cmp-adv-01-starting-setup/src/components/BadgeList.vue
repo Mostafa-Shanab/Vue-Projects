@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <base-card>
     <h2>Available Badges</h2>
     <ul>
       <li>
@@ -9,10 +9,20 @@
         <base-badge type="author" caption="AUTHOR"></base-badge>
       </li>
     </ul>
-  </section>
+  </base-card>
 </template>
 
-<style>
+<script>
+import BaseCard from "./BaseCard.vue";
+
+export default {
+  components: {
+    BaseCard,
+  },
+};
+</script>
+
+<style scoped>
 section h2 {
   margin: 0.5rem 0;
   color: #3a3a3a;
